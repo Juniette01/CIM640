@@ -1,4 +1,4 @@
-###Code Plan for Week 3 Calculator Homework
+### Code Plan for Week 3 Calculator Homework
 
 This is a calculator where the user enters their dog's age and the calculator returns how old the dog would be in human years.
 
