@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz</title>
+
+    <style>
+        /* Enter CSS below */
+    </style>
+
+</head>
+
+
+<body>
+
+    <h1>Quiz</h1>
+
+    <p><i>Answer the following questions:</i></p>
+
+    <form>
+
+
+        <label for="question1">What is the name of Pluto's largest satellite?</label>
+        <select name="question1" id="question1" class="question">
+            <option value="hydra">Hydra</option>
+            <option value="prometheus">Prometheus</option>
+            <option value="charon">Charon</option>
+            <option value="titania">Titania</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="question2">What is the world's largest rodent?</label>
+        <select name="question2" id="question2" class="question">
+            <option value="rabbit">rabbit</option>
+            <option value="squirrel">squirrel</option>
+            <option value="chinchilla">chinchilla</option>
+            <option value="capybara">capybara</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="question3">Lima is the capital of which country?</label>
+        <select name="question3" id="question3" class="question">
+            <option value="peru">Peru</option>
+            <option value="venezuela">Venezuela</option>
+            <option value="ecuador">Ecuador</option>
+            <option value="costarica">Costa Rica</option>
+        </select>
+
+        <br>
+        <br>
+        
+        <label for="question4">Cynophobia is the fear of what kind of animal?</label>
+        <select name="question4" id="question4" class="question">
+            <option value="cats">cats</option>
+            <option value="dogs">dogs</option>
+            <option value="snakes">snakes</option>
+            <option value="pandas">pandas</option>
+        </select>
+
+        <br>
+        <br>
+        
+        <label for="question5">What is the national animal of Scotland?</label>
+        <select name="question5" id="question5" class="question">
+            <option value="goat">goat</option>
+            <option value="badger">badger</option>
+            <option value="unicorn">unicorn</option>
+            <option value="lion">lion</option>
+        </select>
+
+        <br>
+        <br>
+
+        <button type="button" id="submitAnswers">Submit Answers</button>
+
+    </form>
+
+    <br>
+
+    <div id="outputText"></div>
+
+    <script>
+        /* Comment: Enter code below */
+        function checkAnswers() {
+            var getResponse = document.getElementsByClassName("question");
+            //console.log(getResponse[0].value); To view the value of each individual element
+            var output = document.getElementById("outputText");
+            if (getResponse[0].value == answers[0] && getResponse[1].value == answers[1] && getResponse[2].value == answers[2]) {
+                console.log("You are so smart");
+                output.innerHTML = "You are so smart!";
+            } else {
+                console.log("Study alittle harder");
+                output.innerHTML = "Study a little harder.";
+            }
+        }
+        var answers = ["charon", "capybara", "peru", "dogs", "unicorn"];
+        var getButton = document.getElementById("submitAnswers");
+        getButton.addEventListener("click", checkAnswers);
+    </script>
+
+</body>
+
+</html>

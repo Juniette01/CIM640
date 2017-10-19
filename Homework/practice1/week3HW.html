@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dog Age Calculator</title>
+
+    <style>
+        /* Enter CSS below */
+body {
+    background-color: #e6e6fa;
+}
+    </style>
+
+ </head>
+
+
+<body>
+
+    <h1><img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Dog_Paw_Print.png" width="20"> Dog Age Calculator <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Dog_Paw_Print.png" width="20"></h1>
+
+    <p><i>How old is your dog in human years?</i></p>
+    
+    <form>
+        <Label for="age">Enter dog age:</Label>
+        <input type="text" name="age" id="age">
+        <br><br>
+        <button type="button" id="aButton">Calculate</button>
+    </form>
+    <br>
+    <div id="output"></div>
+    
+      
+    <script>
+       /* Comment: Enter code below */
+        
+        
+        function humanDogAge(){
+            var dogAge = document.getElementById("age").value;
+            console.log("Dog age: " + dogAge);
+      
+        var humanAge = dogAge * 7;
+        
+        var message = "Your dog is " + humanAge + " years old.";
+        console.log(message);
+        
+        var outputText =
+            document.getElementById("output");
+            outputText.innerHTML = message;
+        
+        }
+        
+   var getButton = document.getElementById("aButton");
+        //console.log(getButton);
+        getButton.addEventListener("click", humanDogAge);
+        
+     
+        
+    </script>
+
+</body>
+
+</html>
