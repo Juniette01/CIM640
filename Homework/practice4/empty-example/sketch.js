@@ -54,7 +54,6 @@ function draw() {
   posX = mouseX;
   posY = mouseY;
     
-    //HOMEWORK
     
     stroke("orange");
     strokeWeight(1);
@@ -120,9 +119,7 @@ function draw() {
         console.log("totally in the zone 3");
         image(candy,0,0);
     }
-    
-    //------------
-    
+
     //bats
     stroke("white")
     strokeWeight(1);
