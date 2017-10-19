@@ -109,7 +109,7 @@ function draw() {
     
     if(hitZoneDist <= 5){
         console.log("totally in the zone 2");
-        image(ghost,0,0);
+        image(ghost,hitZoneX +120, hitZoneY -50);
     }
     
     var hitZoneDist = dist(hitZoneX +400, hitZoneY +40, mouseX, mouseY);
@@ -117,7 +117,7 @@ function draw() {
     
     if(hitZoneDist <= 5){
         console.log("totally in the zone 3");
-        image(candy,0,0);
+        image(candy,hitZoneX +320, hitZoneY -30,);
     }
 
     //bats
