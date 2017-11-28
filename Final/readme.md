@@ -5,3 +5,9 @@
 2: A game about cats in the city sliding things off of tables/buildings/other things. The player would earn depending on the size of the object that the cat pushes. The main cat can collect other cats for strength to push off bigger things like a piano or car.
 
 3: Language learning -- a scene where you can click on different objects and the name of it would appear in French. You would also be able to hear the correct pronounciation and record your own so you can compare the two after. This would help people say things correctly.
+
+
+
+1st Code Plan
+
+The game will be set up so that a person is walking back and forth at the bottom of the canvas. On the top portion of the canvas will be a cat that the user can move back and forth. This cat will be able to drop objects on the walking person when the user clicks on them. The user will gain points when the objects hit the person below.
