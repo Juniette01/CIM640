@@ -108,8 +108,7 @@ function draw() {
         drawSprites();
     
   //text for the score
-    //textSize(40);
-   // textAlign(700,700);
+ 
     fill("black");
     noStroke();
     textSize(48);
@@ -157,10 +156,7 @@ newSprite.animation.changeFrame(f);
     
     }
 
-//function removeAndScore() {
-//  score += 1;
-//  this.remove();
-//}
+
 
 }
 
